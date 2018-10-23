@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="App-label">Lunatic.cat</h1>
+        <div className="App-label">Lunatic.cat</div>
       </div>
     );
   }
