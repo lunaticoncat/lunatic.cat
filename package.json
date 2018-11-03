@@ -13,7 +13,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "deploy": "yarn build && ./bin/compress.sh && ./bin/deploy.sh"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -25,6 +26,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "glyphhanger": "^3.0.3",
     "icon-gen": "^1.2.3",
     "react-snap": "^1.19.0",
     "svg2png": "^4.1.1"

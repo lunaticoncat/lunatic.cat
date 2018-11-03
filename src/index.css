@@ -2,7 +2,10 @@
     font-family: 'Geostar Cat';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/geostarcat.ttf') format('truetype')
+    src: url('/fonts/geostarcat-subset.woff2') format("woff2"),
+         url('/fonts/geostarcat-subset.zopfli.woff') format("woff"),
+         url('/fonts/geostarcat-subset.ttf') format("truetype");
+    unicode-range: U+2E,U+4C,U+61,U+63,U+69,U+6E,U+74,U+75;
 }
 body {
   margin: 0;
@@ -11,6 +14,7 @@ body {
                -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
                "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
                sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
