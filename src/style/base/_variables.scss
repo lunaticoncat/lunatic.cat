@@ -1,8 +1,44 @@
+// SASS style sheet */
+// Palette color codes */
+// Palette URL: http://paletton.com/#uid=23L0u0kp-PBcwUqjERfwGOkN8Ab */
+
+// Feel free to copy&paste color codes to your application */
+
+
+// As hex codes */
+
+$color-primary-0: #4071E1;	// Main Primary color */
+$color-primary-1: #9BB4EE;
+$color-primary-2: #678DE5;
+$color-primary-3: #1753DE;
+$color-primary-4: #083EB8;
+
+$color-complement-0: #FFBB33;	// Main Complement color */
+$color-complement-1: #FFDE9B;
+$color-complement-2: #FFCB62;
+$color-complement-3: #FFAA00;
+$color-complement-4: #FFAA00;
+
+// As RGBa codes */
+
+$rgba-primary-0: rgba( 64,113,225,1);	// Main Primary color */
+$rgba-primary-1: rgba(155,180,238,1);
+$rgba-primary-2: rgba(103,141,229,1);
+$rgba-primary-3: rgba( 23, 83,222,1);
+$rgba-primary-4: rgba(  8, 62,184,1);
+
+$rgba-complement-0: rgba(255,187, 51,1);	// Main Complement color */
+$rgba-complement-1: rgba(255,222,155,1);
+$rgba-complement-2: rgba(255,203, 98,1);
+$rgba-complement-3: rgba(255,170,  0,1);
+$rgba-complement-4: rgba(255,170,  0,1);
+
+
 // Colors
-$primary: #6C63FF;
-$secondary: #4641FF;
-$accent: #06d19c;
-$primary-dark: darken($primary,8%);
+$primary: $color-primary-0;
+$secondary: $color-primary-4;
+$accent: $color-complement-4;
+$primary-dark: $color-complement-3;
 $text: #666;
 $text-dark: #111;
 $background: #ffffff;
@@ -21,7 +57,7 @@ $normal: 400;
 $bold: 700;
 
 // Other variables
-$radius: 30px;
+$radius: 4px;
 
 // Containers
 $containerWidth: 88%; // Percentage of screen width
@@ -42,6 +78,6 @@ $navbar-height-extended: 70px; // Extended height for navigation => Used on land
 // Hero
 $hero-color: $background;
 $hero-shadow: 0 4px 11px rgba(124,146,169,0.5);
-$hero-color-opacity: 0.96;
+$hero-color-opacity: 0.8;
 $hero-mask-opacity: 0.66;
 $hero-down-size: 1rem; 
