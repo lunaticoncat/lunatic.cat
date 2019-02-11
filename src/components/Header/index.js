@@ -1,7 +1,11 @@
 import * as React from 'react';
 import scroll from './scroll.svg';
+import useScrollPosition from './../../hooks/useScrollPosition';
 
 export default ({ title, subtitle, links, catify }) => {
+  const scrollPosition = useScrollPosition();
+  const hideScrollDown = scrollPosition > 20;
+
   return <>
          <div className="hero">
            <div className="hero__overlay hero__overlay--gradient"></div>
@@ -19,7 +23,7 @@ export default ({ title, subtitle, links, catify }) => {
            </div>
          </div>
          <div className="hero__sub">
-           <span id="scrollToNext" className="scroll">
+           <span id="scrollToNext" className={`scroll ${hideScrollDown ? 'invisible' : ''}`}>
               <img src={scroll} className="hero__sub__down" alt="scroll down" />
            </span>
          </div>

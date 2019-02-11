@@ -1,7 +1,11 @@
 import * as React from 'react';
+import useScrollPosition from './../../hooks/useScrollPosition';
 
 export default ({ title, links }) => {
-  return <div className="navbar navbar--extended">
+  const scrollPosition = useScrollPosition();
+  const visibleNavbar = scrollPosition > 400;
+
+  return <div className={`navbar ${visibleNavbar ? '' : 'navbar--extended'}`}>
            <nav className="nav__mobile"></nav>
            <div className="container">
              <div className="navbar__inner">
