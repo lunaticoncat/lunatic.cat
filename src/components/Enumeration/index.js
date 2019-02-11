@@ -8,8 +8,8 @@ export default ({ title, subtitle, items }) => {
            </div>
            <div className="container">
              <div className="steps__inner">
-               {items.map(item => {
-                 return <div className="step">
+               {items.map((item, i) => {
+                 return <div className="step" key={i}>
                    <div className="step__media">
                      <img src="{item.img}" className="step__image" />
                    </div>

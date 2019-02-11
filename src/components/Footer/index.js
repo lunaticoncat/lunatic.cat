@@ -7,9 +7,9 @@ export default ({ title, groups }) => {
                <a href='/' className="footer__textLogo">{title}</a>
                <div className="footer__data">
                   {groups.map((group, i) => {
-                    return <div className="footer__data__item">
+                    return <div className="footer__data__item" key={i}>
                             {group.map((item, i) => {
-                              return <div className="footer__row">{item}</div>;
+                              return <div className="footer__row" key={i}>{item}</div>;
                             })}
                           </div>;
                   })}

@@ -11,7 +11,6 @@ const {
 } = data;
 
 const landingProps = {...landing, header: landingHeader, nav, footer };
-console.log(landingProps);
 
 class App extends Component {
   render() {
