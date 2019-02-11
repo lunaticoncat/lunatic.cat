@@ -4,7 +4,7 @@ export default ({ title, groups }) => {
   return <div className="footer footer--dark">
            <div className="container">
              <div className="footer__inner">
-               <a href='/' className="footer__textLogo">{title}</a>
+               <a href='#top' className="footer__textLogo cat-font">{title}</a>
                <div className="footer__data">
                   {groups.map((group, i) => {
                     return <div className="footer__data__item" key={i}>

@@ -48,7 +48,7 @@ const landingHeader = {
 };
 
 const footer = {
-  title,
+  title: 'c.c',
   // should be 3
   groups: [
     [word(1), word(1)],

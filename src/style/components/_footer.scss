@@ -19,17 +19,17 @@
 	display: block;
 	cursor: pointer;
 	color: $primary;
-	font-size: 1.225rem;
+	font-size: $logo-font-size;
 	min-width: 33%;
 	margin-bottom: 1.5rem;
 
 	@include tablet{
 		margin-bottom: 0;
 	}
-	
+
 	@include desktop{
 		min-width: 25%;
-		font-size: 1.325rem;
+		font-size: $logo-font-size;
 	}
 }
 
