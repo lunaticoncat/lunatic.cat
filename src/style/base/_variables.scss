@@ -49,7 +49,9 @@ $success: $accent;
 $error: tomato;
 
 // Typography
-$font: "Lato",sans-serif;
+$font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+       sans-serif;
 $font-size: 15px;
 $line-height: 1.7;
 $light: 300;
@@ -80,4 +82,8 @@ $hero-color: $background;
 $hero-shadow: 0 4px 11px rgba(124,146,169,0.5);
 $hero-color-opacity: 0.8;
 $hero-mask-opacity: 0.66;
-$hero-down-size: 1rem; 
+$hero-down-size: 1rem;
+
+// Nav
+$logo-font-size: 3rem;
+$logo-color: #fff;

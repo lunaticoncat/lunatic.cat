@@ -11,7 +11,7 @@ import Footer from './../components/Footer';
 export default ({ nav, header, enumeration, sections, cta, footer }) => {
   return <>
            <Nav {...nav}/>
-           <Header {...header} />
+           <Header {...{...header, catify: true}} />
            <Enumeration {...enumeration} />
            {sections.map((section, i) => <LandingSection {...{...section, key: i}}/>)}
            <Cta {...cta}/>

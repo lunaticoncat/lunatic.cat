@@ -1,7 +1,7 @@
 import * as React from 'react';
 import scroll from './scroll.svg';
 
-export default ({ title, subtitle, links }) => {
+export default ({ title, subtitle, links, catify }) => {
   return <>
          <div className="hero">
            <div className="hero__overlay hero__overlay--gradient"></div>
@@ -10,7 +10,7 @@ export default ({ title, subtitle, links }) => {
              <div className="container">
                <div className="hero__content">
                  <div className="hero__content__inner" id='navConverter'>
-                   <h1 className="hero__title">{title}</h1>
+                   <h1 className={`hero__title ${catify ? 'cat-font': ''}`}>{title}</h1>
                    <p className="hero__text">{subtitle}</p>
   { links.map(e => <a href="{e.link}" key={e.link} className={`button ${e.primary ? 'button__accent' : 'hero__button'}`}>{e.text}</a>) }
                  </div>

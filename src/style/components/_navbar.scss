@@ -22,9 +22,9 @@
 
 // Content
 .navbar__logo{
-	font-size: 1.325rem;
+	font-size: $logo-font-size;
 	transition: 0;
-	color: #fff;
+	color: $logo-color;
 	text-decoration: none;
 }
 

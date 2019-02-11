@@ -3,7 +3,7 @@ import lorem from 'lorem-ipsum';
 const word = (count) => lorem({count, units: 'word'});
 const sentence = (count) => lorem({count, units: 'sentences'});
 
-const title = word(1);
+const title = 'c';
 
 const nav = {
   title,
@@ -39,7 +39,7 @@ const cta = {
 };
 
 const landingHeader = {
-  title: word(3),
+  title: 'Lunatic.cat',
   subtitle: sentence(2),
   links: [
     { link: '#header1', text: word(1), primary: true },
