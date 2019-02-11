@@ -1,0 +1,20 @@
+{
+  "extends": "react-app",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "rules": {
+    "key-spacing": ["warn", { "beforeColon": false, "afterColon": true }],
+    "max-len": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "react/jsx-no-target-blank": "off",
+    "jsx-a11y/alt-text": "off",
+    "radix": "warn"
+  },
+  "env": {
+    "jest": true
+  }
+}
