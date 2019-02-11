@@ -1,110 +1,110 @@
 .navbar{
-	position: fixed;
-	z-index: 100;
-	width: 100%;
-	background-color: $primary;
-	transition: 0.7s;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: $primary;
+  transition: 0.7s;
 
-	&--nofixed{
-		position: relative;
-		z-index: 3;
-	}
+  &--nofixed{
+    position: relative;
+    z-index: 3;
+  }
 }
 
 .navbar__inner{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: $navbar-height;
-	color: #fff;
-	transition: 0.7s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $navbar-height;
+  color: #fff;
+  transition: 0.7s;
 }
 
 // Content
 .navbar__logo{
-	font-size: $logo-font-size;
-	transition: 0;
-	color: $logo-color;
-	text-decoration: none;
-	margin-top: -0.6rem;
+  font-size: $logo-font-size;
+  transition: 0;
+  color: $logo-color;
+  text-decoration: none;
+  margin-top: -0.6rem;
 }
 
 .navbar__menu{
-	display: none;
+  display: none;
 
-	&--noMob{
-		display: block;
-	}
+  &--noMob{
+    display: block;
+  }
 
-	@include desktop{
-		display: block;
-	}
+  @include desktop{
+    display: block;
+  }
 
-	li{
-		margin-left: 4pt;
-		backface-visibility: hidden;
-    	display: inline-block;
+  li{
+    margin-left: 4pt;
+    backface-visibility: hidden;
+      display: inline-block;
 
-		@include desktop{
-			margin-left: 16pt;
-		}
-	}
+    @include desktop{
+      margin-left: 16pt;
+    }
+  }
 
-	a{
-		color: #fff;
-		@include desktop{
-			opacity: 0.75;
+  a{
+    color: #fff;
+    @include desktop{
+      opacity: 0.75;
 
-			&:hover{
-				opacity: 1;
-			}
+      &:hover{
+        opacity: 1;
+      }
 
-			&:after {
-				display:block;
-				content: '';
-				border-bottom: solid 1px #fff;  
-				transform: scaleX(0);  
-				transition: transform 250ms ease-in-out;
-			}
+      &:after {
+        display:block;
+        content: '';
+        border-bottom: solid 1px #fff;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+      }
 
-			&:hover:after { transform: scaleX(1); }	
-		}
-	}
+      &:hover:after { transform: scaleX(1); } 
+    }
+  }
 }
 
 .navbar__menu-mob{
-	display: block;
-	margin-top: -0.2rem;
+  display: block;
+  margin-top: -0.2rem;
 
-	&--noMob{
-		display: none;
-	}
+  &--noMob{
+    display: none;
+  }
 
-	@include desktop{
-		display: none;
-	}
+  @include desktop{
+    display: none;
+  }
 }
 
 /*--- Extended and transparent version ---*/
 .navbar--extended{
-	background-color: transparent;
-	
-	.navbar__inner{
-		height: $navbar-height;
-		color: $hero-color; // Since this is transparent whatever color is used in the hero, fits here
-	}
+  background-color: transparent;
+  
+  .navbar__inner{
+    height: $navbar-height;
+    color: $hero-color; // Since this is transparent whatever color is used in the hero, fits here
+  }
 }
 
 /*! responsive-nav.js 1.0.39 by @viljamis */
 
 .nav__mobile ul {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	display: block;
-	list-style: none;
-	background-color: $background-dark;
-	color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+  background-color: $background-dark;
+  color: #fff;
 }
 
 .nav__mobile li {
@@ -116,7 +116,7 @@
   border-bottom: 1px solid rgba(255,255,255,0.1);
 
   &:last-child{
-  	border-bottom: none;
+    border-bottom: none;
   }
 }
 
@@ -156,7 +156,7 @@
 }
 
 #toggle svg{
-	height: 1.2em;
-	width: 1.2em;
-	vertical-align: middle;
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: middle;
 }

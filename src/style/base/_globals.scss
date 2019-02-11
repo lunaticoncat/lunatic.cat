@@ -1,37 +1,37 @@
 html{
-	box-sizing: border-box;
-	background-color: $background;
+  box-sizing: border-box;
+  background-color: $background;
 }
 
 *, *:before, *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .invisible{
-	opacity: 0;
-	transition: 0.7s;
+  opacity: 0;
+  transition: 0.7s;
 }
 
 .fakefield{
-	display: none;
+  display: none;
 }
 
 .left-align{
-	text-align: left;
+  text-align: left;
 }
 
 .center, center-align{
-	text-align: center;
+  text-align: center;
 }
 
 .right-align{
-	text-align: right;
+  text-align: right;
 }
 
 .stress{
-	color: $text-dark;
+  color: $text-dark;
 }
 
 img, svg{
-	max-width: 100%;
+  max-width: 100%;
 }
