@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export default ({ title, subtitle, items }) => {
-  return <div className="steps landing__section">
+  return <div className="steps landing__section" id="why">
            <div className="container">
              <h2>{title}</h2>
              <p>{subtitle}</p>

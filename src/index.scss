@@ -9,6 +9,9 @@
          url('/fonts/geostarcat-subset.ttf') format("truetype");
     unicode-range: U+2E,U+4C,U+61,U+63,U+69,U+6E,U+74,U+75;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -33,3 +36,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+

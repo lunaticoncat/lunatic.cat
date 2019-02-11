@@ -8,8 +8,8 @@ const title = 'c';
 const nav = {
   title,
   links: [
-    { link: '#nav1', text: word(1) },
-    { link: '#nav2', text: word(1) },
+    { link: '#talk-to-us', text: word(1) },
+    { link: '#why', text: word(1) },
   ]
 };
 

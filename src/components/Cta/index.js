@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export default ({ title, subtitle, links }) => {
-  return <div className="cta cta--reverse">
+  return <div className="cta cta--reverse" id="talk-to-us">
   <div className="container">
   <div className="cta__inner">
   <h2 className="cta__title">{title}</h2>

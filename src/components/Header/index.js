@@ -7,7 +7,7 @@ export default ({ title, subtitle, links, catify }) => {
   const hideScrollDown = scrollPosition > 20;
 
   return <>
-         <div className="hero">
+         <div className="hero" id="top">
            <div className="hero__overlay hero__overlay--gradient"></div>
            <div className="hero__mask"></div>
            <div className="hero__inner">
