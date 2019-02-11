@@ -6,7 +6,7 @@ export default ({ img, title, text }) => {
              <div className="container">
                <div className="expanded__inner">
                  <div className="expanded__media">
-                   <img src="{ img }" className="expanded__image" />
+                   <img src="{ img }" className="expanded__image" alt="" />
                  </div>
                  <div className="expanded__content">
                     <h2 className="expanded__title">{title}</h2>

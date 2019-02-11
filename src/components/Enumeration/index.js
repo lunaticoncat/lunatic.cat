@@ -11,7 +11,7 @@ export default ({ title, subtitle, items }) => {
                {items.map((item, i) => {
                  return <div className="step" key={i}>
                    <div className="step__media">
-                     <img src="{item.img}" className="step__image" />
+                     <img src="{item.img}" className="step__image" alt="" />
                    </div>
                    <h4>{item.title}</h4>
                    <p className="step__text">{item.text}</p>
