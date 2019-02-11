@@ -1,6 +1,6 @@
 form{
   margin-bottom: 1.5em;
-  
+
   .double{
     display: flex;
     justify-content: space-between;
@@ -97,7 +97,7 @@ select{
   -moz-appearance: none;
 
   // Appearance for IE 10/11
-  &::-ms-expand { 
+  &::-ms-expand {
       display: none; /* hide the default arrow in ie10 and ie11 */
   }
 
@@ -235,7 +235,7 @@ select{
     font-size: 0.9em;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -khtml-user-select: none; 
+    -khtml-user-select: none;
     -ms-user-select: none;
   }
 

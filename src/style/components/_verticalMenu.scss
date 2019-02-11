@@ -41,8 +41,8 @@
       &:after {
         display: block;
         content: '';
-        border-bottom: 1px solid $primary;  
-        transform: scaleX(0);  
+        border-bottom: 1px solid $primary;
+        transform: scaleX(0);
         transition: transform 250ms ease-in-out;
       }
 
@@ -70,7 +70,7 @@
 
 .vMenu--active{
   color: $primary;
-  
+
   &:before{
     content: "\2014";
     margin-right: 0.333em;
@@ -83,8 +83,8 @@
     &:after {
       display: block;
       content: '';
-      border-bottom: 1px solid $primary;  
-      transform: none;  
+      border-bottom: 1px solid $primary;
+      transform: none;
       transition: none;
     }
   }

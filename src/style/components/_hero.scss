@@ -42,7 +42,7 @@
   height: 100%;
   width: 100%;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080"><defs><linearGradient id="06714b97-aec8-4b7e-bf3d-1e20f95f612e" y1="809.5" x2="958" y2="809.5" gradientTransform="matrix(1, 0, 0, -1, 0, 1082)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.05"/></linearGradient></defs><title>hero</title><rect id="0567095b-2cf7-4407-b8ab-ec2abe52d830" data-name="&lt;Path&gt;" y="545" width="1920" height="535" fill="#fff" opacity="0.05" style="isolation:isolate"/><polygon id="82ca9a61-a0a1-49cc-9805-a3533c693bad" data-name="&lt;Path&gt;" points="958 545 0 545 0 0 770.96 0 958 545" fill="url(#06714b97-aec8-4b7e-bf3d-1e20f95f612e)"/></svg>');
-  background-size: cover; 
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   opacity: $hero-mask-opacity;
@@ -57,8 +57,8 @@
   min-height: calc( 100vh - 50px );
   padding: calc( #{$navbar-height + 24pt}) 0; // Padding added to avoid overlapping with fixed navigation bars
   overflow: auto;
-  
-  // This div allows normal behaviors for contained elements instead of flexbox aligning them 
+
+  // This div allows normal behaviors for contained elements instead of flexbox aligning them
   &__inner{
     width: 100%;
     max-width: 600px;
