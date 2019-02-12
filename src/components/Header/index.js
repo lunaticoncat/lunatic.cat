@@ -21,11 +21,12 @@ export default ({ title, subtitle, links, catify }) => {
                </div>
              </div>
            </div>
-         </div>
+        </div>
+        {/*
          <div className="hero__sub">
            <span id="scrollToNext" className={`scroll ${hideScrollDown ? 'invisible' : ''}`}>
               <img src={scroll} className="hero__sub__down" alt="scroll down" />
            </span>
-         </div>
+         </div> */}
        </>;
 }
