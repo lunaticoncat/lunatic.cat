@@ -9,7 +9,7 @@ export default ({ title, links }) => {
            <nav className="nav__mobile"></nav>
            <div className="container">
              <div className="navbar__inner">
-               <a href='#top' className="navbar__logo cat-font">{title}</a>
+               <a href='/' className="navbar__logo cat-font">{title}</a>
                <nav className="navbar__menu">
                  <ul>
                    { links.map(e => <li key={e.link}><a href={e.link}>{e.text}</a></li>) }
