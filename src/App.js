@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Landing from './Landing';
-import data from './data';
+
+import dataEn from './data';
+import dataCat from './data.cat';
+
+const data = window.location.pathname === '/cat' ? dataCat : dataEn;
 
 const {
   nav,

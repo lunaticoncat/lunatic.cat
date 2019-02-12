@@ -40,9 +40,9 @@ const cta = {
 
 const landingHeader = {
   title: 'Lunatic.cat',
-  subtitle: 'Finding the best tech solutions can help your business grow faster. Our key specializations are: OLAP backends, conflictless realtime client-server syncronization and DevOps using Kuburnetes.',
+  subtitle: 'Trobar les millors solucions tecnològiques pot ajudar el vostre negoci a créixer més ràpidament. Les nostres especialitzacions clau són: torneigs OLAP, sincronització de client-servidor en temps real i DevOps utilitzant Kuburnetes.',
   links: [
-    { link: 'mailto:hello@lunatic.cat', text: 'Meow to us', primary: true },
+    { link: 'mailto:hello@lunatic.cat', text: 'Meow cap a nosaltres', primary: true },
     // { link: '#header2', text: word(1) },
   ]
 };
