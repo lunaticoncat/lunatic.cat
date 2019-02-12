@@ -40,7 +40,7 @@ const cta = {
 
 const landingHeader = {
   title: 'Lunatic.cat',
-  subtitle: 'Finding the best tech solutions can help your business grow faster. Our key specializations are: OLAP backends, conflictless realtime client-server syncronization and DevOps using Kuburnetes.',
+  subtitle: 'Finding the best tech solutions can help your business grow faster. Our key specializations are: OLAP backends, conflictless realtime client-server CRDT syncronization and DevOps using Kuburnetes.',
   links: [
     { link: 'mailto:hello@lunatic.cat', text: 'Meow to us', primary: true },
     // { link: '#header2', text: word(1) },
