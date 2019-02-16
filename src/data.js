@@ -1,5 +1,9 @@
 import lorem from 'lorem-ipsum';
 
+import reportImg from './images/report.svg';
+import syncImg from './images/sync.svg';
+import containerImg from './images/container.svg';
+
 const word = (count) => lorem({count, units: 'word'});
 const sentence = (count) => lorem({count, units: 'sentences'});
 
@@ -14,13 +18,13 @@ const nav = {
 };
 
 const enumeration = {
-  title: word(1),
-  subtitle: sentence(2),
+  title: 'We can help you with',
+  subtitle: 'Our expertise ensures that you have the right set of tools for your business which saves you both time and money',
   // should be 3
   items: [
-    { img: '#img1', title: word(1), text: sentence(2) },
-    { img: '#img2', title: word(1), text: sentence(2) },
-    { img: '#img3', title: word(1), text: sentence(2) },
+    { img: reportImg, title: 'OLAP', text: 'Process hundreds of gygabytes and get neat interactive dashboards to get new insights into your data.' },
+    { img: syncImg, title: 'Realtime Syncronization', text: 'Conflict-free distributed data replication.' },
+    { img: containerImg, title: 'DevOps', text: 'Migrate your system to using of Docker & Kubernetes.' },
   ]
 };
 
