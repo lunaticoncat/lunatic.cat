@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; //calc( 100vh - 50px );
+  min-height: calc( 100vh - 50px );
   padding: calc( #{$navbar-height + 24pt}) 0; // Padding added to avoid overlapping with fixed navigation bars
   overflow: auto;
 
