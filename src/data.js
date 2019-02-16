@@ -7,6 +7,8 @@ import reactImg from './images/react.svg';
 import mobileImg from './images/mobile.svg';
 import ethereumImg from './images/ethereum.svg';
 
+import veeqox264Mov from './video/veeqo.x264.mp4';
+
 const word = (count) => lorem({count, units: 'word'});
 const sentence = (count) => lorem({count, units: 'sentences'});
 
@@ -34,11 +36,18 @@ const enumeration = {
   ]
 };
 
-const sections = [
-  { img: '#img1', title: 'Reports for Veeqo.com', text: sentence(3) },
-  { img: '#img2', title: '', text: sentence(3) },
-  { img: '#img3', title: '', text: sentence(3) },
-];
+const sections = [{
+  head: {
+    title: 'Our work',
+    subtitle: 'Sample use cases'
+  },
+  body: [
+    {video: [{src: veeqox264Mov, type: 'video/mp4; codecs=avc1.4D401E'}],
+     title: 'Reports for Veeqo.com', text: 'We processed hundreds of gygabytes of sales records to give customers of the e-commerce platform summarize data, follow the trends and plan accordingly. All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into account user interface.' },
+    { img: '#img2', title: '', text: sentence(3) },
+    { img: '#img3', title: '', text: sentence(3) },
+  ]
+}];
 
 const cta = {
   title: word(1),

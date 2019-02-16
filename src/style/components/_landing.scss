@@ -2,6 +2,15 @@
   padding: 24pt 0;
 }
 
+.landing__section__head {
+  padding-top: 0;
+  text-align: center;
+
+  h2 {
+    margin-top: 0.5em;
+  }
+}
+
 .landing__section:nth-child(odd){
   background-color: $background-alt;
   border-top: 1px solid $line;

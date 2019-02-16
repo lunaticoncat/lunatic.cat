@@ -1,7 +1,6 @@
 .expanded{
-  padding: 72pt 0;
+  padding: 54pt 0;
 }
-
 .expanded__inner{
   display: flex;
   justify-content: space-between;
@@ -22,6 +21,10 @@
     flex-shrink: 0;
     order: unset;
   }
+}
+
+.head__container {
+  text-align: center;
 }
 
 .expanded__content{
@@ -47,13 +50,13 @@
 }
 
 /* Actual content */
-.expanded__image{
+.expanded__image, .expanded__video {
   width: 90%;
   max-width: 220px;
   padding: 16pt 0;
 
   @include desktop{
-    max-width: 280px;
+    max-width: 600px;
   }
 }
 
