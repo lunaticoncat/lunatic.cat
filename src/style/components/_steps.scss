@@ -7,6 +7,7 @@
   @include desktop{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
@@ -16,6 +17,7 @@
   width: 100%;
   border-top: 1px solid $line;
   overflow: auto;
+  flex: 1 0 33%;
 
   &:first-child{
     border-top: none;

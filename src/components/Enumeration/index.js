@@ -15,7 +15,7 @@ export default ({ title, subtitle, items }) => {
                    </div>
                    <h4>{item.title}</h4>
                    <p className="step__text">{item.text}</p>
-                 </div>
+                </div>;
                })}
              </div>
            </div>
