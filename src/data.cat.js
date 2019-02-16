@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: "off"*/
 import lorem from 'lorem-ipsum';
 
 const word = (count) => lorem({count, units: 'word'});
@@ -24,11 +25,14 @@ const enumeration = {
   ]
 };
 
-const sections = [
-  { img: '#img1', title: word(1), text: sentence(3) },
-  { img: '#img2', title: word(1), text: sentence(3) },
-  { img: '#img3', title: word(1), text: sentence(3) },
-];
+const sections = [{
+  head: { title: word(1), subtitle: sentence(2) },
+  body: [
+    { img: '#img1', title: word(1), text: sentence(3) },
+    { img: '#img2', title: word(1), text: sentence(3) },
+    { img: '#img3', title: word(1), text: sentence(3) },
+  ]
+}];
 
 const cta = {
   title: word(1),
@@ -39,6 +43,7 @@ const cta = {
 };
 
 const landingHeader = {
+  fullscreen: true,
   title: 'Lunatic.cat',
   subtitle: 'Trobar les millors solucions tecnològiques pot ajudar el vostre negoci a créixer més ràpidament. Les nostres especialitzacions clau són: torneigs OLAP, CRDT sincronització de client-servidor en temps real i DevOps utilitzant Kuburnetes.',
   links: [
@@ -59,14 +64,15 @@ const footer = {
 };
 
 const landing = {
-  enumeration,
-  sections,
-  cta,
+  // enumeration,
+  // sections,
+  sections: [],
+  // cta,
 };
 
 export default {
   nav,
   landing,
   landingHeader,
-  footer,
+  // footer,
 };

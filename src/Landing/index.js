@@ -13,7 +13,7 @@ export default ({ nav, header, enumeration, sections, sectionHead, cta, footer }
   return <>
            <Nav {...nav}/>
            <Header {...{...header, catify: true}} />
-           <Enumeration {...enumeration} />
+           {enumeration ? <Enumeration {...enumeration} /> : null}
            {sections.map((section, i) =>
              <div key={i}>
                <LandingSectionHead {...{...section.head, key: i+1000}} />
@@ -21,7 +21,7 @@ export default ({ nav, header, enumeration, sections, sectionHead, cta, footer }
                  <LandingSection {...{...body, key: i}} />
                 )}
              </div>)}
-           <Cta {...cta}/>
-           <Footer {...footer}/>
+           {cta ? <Cta {...cta}/> : null }
+           {footer ? <Footer {...footer}/> : null }
          </>;
 }
