@@ -16,7 +16,7 @@ export default ({ title, subtitle, links, catify }) => {
                  <div className="hero__content__inner" id='navConverter'>
                    <h1 className={`hero__title ${catify ? 'cat-font': ''}`}>{title}</h1>
                    <p className="hero__text">{subtitle}</p>
-  { links.map(e => <a href="{e.link}" key={e.link} className={`button ${e.primary ? 'button__accent' : 'hero__button'}`}>{e.text}</a>) }
+  { links.map(e => <a href={e.link} key={e.link} className={`button ${e.primary ? 'button__accent' : 'hero__button'}`}>{e.text}</a>) }
                  </div>
                </div>
              </div>
