@@ -1,12 +1,21 @@
 .hero{
   position: relative;
   width: 100%;
-  background-image: url("/images/hero.jpg");
+  background-image: url("images/hero.jpg?size=600");
   box-shadow: $hero-shadow;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   color: $hero-color;
+
+  @include desktop{
+    background-image: url("images/hero.jpg?size=992");
+  }
+
+  @include huge{
+    background-image: url("images/hero.jpg?size=1400");
+  }
+
 
   &__inner{
     position: relative;

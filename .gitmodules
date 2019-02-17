@@ -1,0 +1,3 @@
+[submodule "create-react-app"]
+	path = create-react-app
+	url = git@github.com:lunatic-cat/create-react-app.git

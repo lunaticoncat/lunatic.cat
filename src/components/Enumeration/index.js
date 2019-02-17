@@ -1,7 +1,8 @@
 import * as React from 'react';
+import Image from './../Image';
 
-export default ({ head, body }) => {
-  return <div className="steps landing__section">
+export default ({ head, body, id }) => {
+  return <div className="steps landing__section" id={id}>
            <div className="container">
              <h2>{head.title}</h2>
              <p>{head.subtitle}</p>
@@ -11,7 +12,7 @@ export default ({ head, body }) => {
                {body.map((item, i) => {
                  return <div className="step" key={i}>
                    <div className="step__media">
-                     <img src={item.img} className="step__image" alt="" />
+                     <Image src={item.img} className="step__image" />
                    </div>
                    <h4>{item.title}</h4>
                    <p className="step__text">{item.text}</p>

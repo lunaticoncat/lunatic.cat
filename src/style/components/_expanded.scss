@@ -7,8 +7,16 @@
     justify-content: space-evenly;
 
     .devicon {
-      padding: 1.2em;
+      &-work {
+        padding: 1.2em;
+      };
+      &-team {
+        margin: 1.2em;
+      };
+
       flex: 1 0 30%;
+      max-width: 100px;
+      max-height: 100px;
 
       @include desktop{
         flex: 1 0 10%;

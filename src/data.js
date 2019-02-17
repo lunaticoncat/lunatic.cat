@@ -14,8 +14,8 @@ import bandpPoster from './video/bandp.x264.mp4.png';
 import talkmapMov from './video/talkmap.x264.mp4';
 import talkmapPoster from './video/talkmap.x264.mp4.png';
 
-import razum2umPic from './images/razum2um.jpg';
-import byjikahkazPic from './images/byjikahkaz.jpg';
+import razum2umPic from './images/razum2um.jpg?sizes[]=992,sizes[]=600';
+import byjikahkazPic from './images/byjikahkaz.jpg?sizes[]=992,sizes[]=600';
 
 import techicons from './techicons';
 
@@ -33,6 +33,7 @@ const nav = {
 };
 
 const experienceSection = {
+  id: 'experience',
   type: 'Enumeration',
   head: {
     title: 'We can help you with',
@@ -52,6 +53,7 @@ const experienceSection = {
 const x264 = 'video/mp4; codecs=avc1.42C01E';
 
 const workSection = {
+  id: 'work',
   type: 'LandingSection',
   head: {
     title: 'Our work',
@@ -73,11 +75,13 @@ const workSection = {
 };
 
 const teamSection = {
+  id: 'team',
   type: 'LandingSection',
   // type: 'Enumeration',
   head: {
     title: 'Our team',
     subtitle: "We're small now, but this makes communication highly effecient.",
+    devicons: [razum2umPic, byjikahkazPic],
   },
   body: [
     {img: razum2umPic,

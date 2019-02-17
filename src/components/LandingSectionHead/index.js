@@ -1,7 +1,8 @@
 import * as React from 'react';
 import Text from './../Text';
+import Image from './../Image';
 
-export default ({ title, subtitle, devicons = [] }) => {
+export default ({ id, title, subtitle, devicons = [] }) => {
   return <>
            <div className="expanded landing__section landing__section__head">
              <div className="container">
@@ -9,8 +10,8 @@ export default ({ title, subtitle, devicons = [] }) => {
                <Text text={subtitle} />
                <div className='devicons'>
                  {devicons.map((icon, idx) =>
-                   <div className={'devicon'} key={idx}>
-                     <img src={icon} alt='' />
+                   <div className={`devicon devicon-${id}`} key={idx}>
+                     <Image src={icon} />
                    </div>
                   )}
                </div>
