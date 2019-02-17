@@ -6,7 +6,7 @@ export default ({ title, subtitle, links }) => {
   <div className="cta__inner">
   <h2 className="cta__title">{title}</h2>
   <p className="cta__sub cta__sub--center">{subtitle}</p>
-  { links.map(e => <a href="{e.link}" key={e.link} className={`button ${e.primary ? 'button__accent' : 'hero__button'}`}>{e.text}</a>) }
+  { links.map(e => <a href={e.link} key={e.link} className={`button ${e.primary ? 'button__accent' : 'hero__button'}`}>{e.text}</a>) }
   </div>
   </div>
   </div>;
