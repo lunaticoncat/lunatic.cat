@@ -8,7 +8,7 @@ export default ({ img, video, title, text }) => {
                <div className="expanded__inner">
                  <div className="expanded__media">
                    {img ? <img src={img} className="expanded__image" alt="" /> : null }
-                   {video ? (<video autoPlay={true} loop={true} className={`expanded__video ${video.vertical ? 'expanded__video--vertical' : ''}`}>
+                   {video ? (<video autoPlay loop defaultmuted="true" playsInline onContextMenu={() => {}} preload="auto" className={`expanded__video ${video.vertical ? 'expanded__video--vertical' : ''}`} poster={video.poster}>
                      {video.sources.map((source, idx) => <source src={source.src} type={source.type} key={idx} />)}
                    </video>): null }
                  </div>

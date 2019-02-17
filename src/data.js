@@ -8,8 +8,11 @@ import mobileImg from './images/mobile.svg';
 import ethereumImg from './images/ethereum.svg';
 
 import veeqoMov from './video/veeqo.x264.mp4';
+import veeqoPoster from './video/veeqo.x264.mp4.png';
 import bandpMov from './video/bandp.x264.mp4';
+import bandpPoster from './video/bandp.x264.mp4.png';
 import talkmapMov from './video/talkmap.x264.mp4';
+import talkmapPoster from './video/talkmap.x264.mp4.png';
 
 import techicons from './techicons';
 
@@ -40,7 +43,8 @@ const enumeration = {
   ]
 };
 
-const x264 = 'video/mp4; codecs=avc1.4D401E';
+// Constrained Baseline Profile Level 3
+const x264 = 'video/mp4; codecs=avc1.42C01E';
 
 const sections = [{
   head: {
@@ -49,14 +53,15 @@ const sections = [{
     devicons: techicons,
   },
   body: [
-    {video: {sources: [{src: veeqoMov, type: x264}]},
+    {video: {sources: [{src: veeqoMov, type: x264}], poster: veeqoPoster},
      title: "Reports for Veeqo.com", text: ["We processed hundreds of gigabytes of sales records in to give customers of the e-commerce platform quick access to their's aggregated data, follow the trends and plan accordingly.", "All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into the existing user interface."] },
 
     {video: {vertical: true,
+             poster: bandpPoster,
              sources: [{src: bandpMov, type: x264}]},
      title: 'Brick & Portal iOS app', text: 'Together with digitaldesign.nyc we created a mobile application for a social commerce platform' },
 
-    {video: {sources: [{src: talkmapMov, type: x264}]},
+    {video: {sources: [{src: talkmapMov, type: x264}], poster: talkmapPoster},
      title: 'Frontend for TalkMap.io', text: '' },
   ]
 }];
