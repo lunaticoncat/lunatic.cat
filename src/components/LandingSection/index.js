@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Text from './../Text';
 
 export default ({ img, video, title, text }) => {
   return <>
@@ -13,7 +14,7 @@ export default ({ img, video, title, text }) => {
                  </div>
                  <div className="expanded__content">
                     <h2 className="expanded__title">{title}</h2>
-                    <p className="expanded__text">{text}</p>
+                    <Text className="expanded__text" text={text} />
                  </div>
                </div>
              </div>
