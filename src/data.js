@@ -14,6 +14,9 @@ import bandpPoster from './video/bandp.x264.mp4.png';
 import talkmapMov from './video/talkmap.x264.mp4';
 import talkmapPoster from './video/talkmap.x264.mp4.png';
 
+import razum2umPic from './images/razum2um.jpg';
+import byjikahkazPic from './images/byjikahkaz.jpg';
+
 import techicons from './techicons';
 
 const word = (count) => lorem({count, units: 'word'});
@@ -29,11 +32,13 @@ const nav = {
   ]
 };
 
-const enumeration = {
-  title: 'We can help you with',
-  subtitle: 'Our expertise ensures that you have the right set of tools for your business which saves you both time and money',
-  // should be 3
-  items: [
+const experienceSection = {
+  type: 'Enumeration',
+  head: {
+    title: 'We can help you with',
+    subtitle: 'Our expertise ensures that you have the right set of tools for your business which saves you both time and money',
+  },
+  body: [
     { img: reportImg, title: 'OLAP', text: 'Process hundreds of gigabytes to get new insights into your data.' },
     { img: syncImg, title: 'Realtime Syncronization', text: 'Conflict-free distributed data replication.' },
     { img: reactImg, title: 'Frontend', text: 'Reactive, animated dashboards and visualizations.' },
@@ -46,7 +51,8 @@ const enumeration = {
 // Constrained Baseline Profile Level 3
 const x264 = 'video/mp4; codecs=avc1.42C01E';
 
-const sections = [{
+const workSection = {
+  type: 'LandingSection',
   head: {
     title: 'Our work',
     subtitle: "Sample use cases we've built using",
@@ -54,17 +60,33 @@ const sections = [{
   },
   body: [
     {video: {sources: [{src: veeqoMov, type: x264}], poster: veeqoPoster},
-     title: "Reports for Veeqo.com", text: ["We processed hundreds of gigabytes of sales records in to give customers of the e-commerce platform quick access to their's aggregated data, follow the trends and plan accordingly.", "All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into the existing user interface."] },
+     title: "Reports for Veeqo.com", text: ["We processed hundreds of gigabytes of sales records in to give customers of the e-commerce platform quick access to their's aggregated data, follow the trends and plan accordingly.", "All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into the existing user interface.", "Technology used: PostgeSQL, Elasticsearch."] },
 
     {video: {vertical: true,
              poster: bandpPoster,
              sources: [{src: bandpMov, type: x264}]},
-     title: 'Brick & Portal iOS app', text: 'Together with digitaldesign.nyc we created a mobile application for a social commerce platform' },
+     title: 'Brick & Portal iOS app', text: ['Together with digitaldesign.nyc we created a mobile application for a social commerce platform.', 'Features included: contacts, camera access, social networks auth.', 'Technology used: React Native, Redux.'] },
 
     {video: {sources: [{src: talkmapMov, type: x264}], poster: talkmapPoster},
-     title: 'Frontend for TalkMap.io', text: '' },
+     title: 'Frontend for TalkMap.io', text: ['Rich user interface for a service which analyses your social health. Visualisation of the social graph and close relationships.', 'Technology used: clojurescript, re-frame, d3js.'] },
   ]
-}];
+};
+
+const teamSection = {
+  type: 'LandingSection',
+  // type: 'Enumeration',
+  head: {
+    title: 'Our team',
+    subtitle: "We're small now, but this makes communication highly effecient.",
+  },
+  body: [
+    {img: razum2umPic,
+     title: "Vladimir Bokov", text: [sentence(1), sentence(1)] },
+
+    {img: byjikahkazPic,
+     title: 'Vladimir Sidorenko', text: [sentence(1), sentence(1)] },
+  ]
+};
 
 const cta = {
   title: word(1),
@@ -95,8 +117,7 @@ const footer = {
 };
 
 const landing = {
-  enumeration,
-  sections,
+  sections: [experienceSection, workSection, teamSection],
   cta,
 };
 

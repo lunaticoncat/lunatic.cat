@@ -13,14 +13,18 @@ export default ({ nav, header, enumeration, sections, sectionHead, cta, footer }
   return <>
            <Nav {...nav}/>
            <Header {...{...header, catify: true}} />
-           {enumeration ? <Enumeration {...enumeration} /> : null}
-           {sections.map((section, i) =>
-             <div key={i}>
-               <LandingSectionHead {...{...section.head, key: i+1000}} />
-               {section.body.map((body, i) =>
-                 <LandingSection {...{...body, key: i}} />
-                )}
-             </div>)}
+           {sections.map((section, sidx) => {
+               switch (section.type) {
+               case 'Enumeration':
+                 return(<Enumeration {...{...section, key: sidx}} />);
+               case 'LandingSection':
+                 return(<React.Fragment key={sidx}>
+                     <LandingSectionHead {...section.head} />
+                     {section.body.map((body, i) => <LandingSection {...{...body, key: i}} />)}
+                 </React.Fragment>);
+               default: return null;
+               }
+           })}
            {cta ? <Cta {...cta}/> : null }
            {footer ? <Footer {...footer}/> : null }
          </>;

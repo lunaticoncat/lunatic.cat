@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Text from './../Text';
 
-export default ({ title, subtitle, devicons }) => {
+export default ({ title, subtitle, devicons = [] }) => {
   return <>
            <div className="expanded landing__section landing__section__head">
              <div className="container">
