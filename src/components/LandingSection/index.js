@@ -7,9 +7,9 @@ export default ({ img, video, title, text }) => {
                <div className="expanded__inner">
                  <div className="expanded__media">
                    {img ? <img src={img} className="expanded__image" alt="" /> : null }
-                   {video ? (<video autoPlay={true} loop={true} className="expanded__video">
-                               {video.map((source, idx) => <source src={source.src} type={source.type} key={idx} />)}
-                             </video>): null }
+                   {video ? (<video autoPlay={true} loop={true} className={`expanded__video ${video.vertical ? 'expanded__video--vertical' : ''}`}>
+                     {video.sources.map((source, idx) => <source src={source.src} type={source.type} key={idx} />)}
+                   </video>): null }
                  </div>
                  <div className="expanded__content">
                     <h2 className="expanded__title">{title}</h2>

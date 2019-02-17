@@ -7,7 +7,8 @@ import reactImg from './images/react.svg';
 import mobileImg from './images/mobile.svg';
 import ethereumImg from './images/ethereum.svg';
 
-import veeqox264Mov from './video/veeqo.x264.mp4';
+import veeqoMov from './video/veeqo.x264.mp4';
+import bandpMov from './video/bandp.x264.mp4';
 
 const word = (count) => lorem({count, units: 'word'});
 const sentence = (count) => lorem({count, units: 'sentences'});
@@ -42,9 +43,11 @@ const sections = [{
     subtitle: 'Sample use cases'
   },
   body: [
-    {video: [{src: veeqox264Mov, type: 'video/mp4; codecs=avc1.4D401E'}],
+    {video: {sources: [{src: veeqoMov, type: 'video/mp4; codecs=avc1.4D401E'}]},
      title: 'Reports for Veeqo.com', text: 'We processed hundreds of gygabytes of sales records to give customers of the e-commerce platform summarize data, follow the trends and plan accordingly. All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into account user interface.' },
-    { img: '#img2', title: '', text: sentence(3) },
+    {video: {vertical: true,
+             sources: [{src: bandpMov, type: 'video/mp4; codecs=avc1.4D401E'}]},
+     title: 'Brick & Portal iOS app', text: 'Together with digitaldesign.nyc we created a mobile application for a social commerce platform' },
     { img: '#img3', title: '', text: sentence(3) },
   ]
 }];

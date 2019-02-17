@@ -58,6 +58,12 @@
   @include desktop{
     max-width: 600px;
   }
+
+  &--vertical {
+    @include desktop{
+      max-width: 300px;
+    }
+  }
 }
 
 .expanded__title{
