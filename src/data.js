@@ -11,6 +11,8 @@ import veeqoMov from './video/veeqo.x264.mp4';
 import bandpMov from './video/bandp.x264.mp4';
 import talkmapMov from './video/talkmap.x264.mp4';
 
+import techicons from './techicons';
+
 const word = (count) => lorem({count, units: 'word'});
 const sentence = (count) => lorem({count, units: 'sentences'});
 
@@ -43,11 +45,12 @@ const x264 = 'video/mp4; codecs=avc1.4D401E';
 const sections = [{
   head: {
     title: 'Our work',
-    subtitle: 'Sample use cases'
+    subtitle: "Sample use cases we've built using",
+    devicons: techicons,
   },
   body: [
     {video: {sources: [{src: veeqoMov, type: x264}]},
-     title: "Reports for Veeqo.com", text: ["We processed hundreds of gigabytes of sales records to give customers of the e-commerce platform quick access to their's aggregated data, follow the trends and plan accordingly.", "All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into the existing user interface."] },
+     title: "Reports for Veeqo.com", text: ["We processed hundreds of gigabytes of sales records in to give customers of the e-commerce platform quick access to their's aggregated data, follow the trends and plan accordingly.", "All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into the existing user interface."] },
 
     {video: {vertical: true,
              sources: [{src: bandpMov, type: x264}]},

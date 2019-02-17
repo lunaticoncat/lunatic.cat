@@ -1,6 +1,7 @@
 import React from 'react';
 import { hydrate, render } from "react-dom";
 import 'normalize.css';
+import 'devicon';
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';

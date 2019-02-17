@@ -1,5 +1,20 @@
 .expanded{
   padding: 54pt 0;
+
+  .devicons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .devicon {
+      padding: 1.2em;
+      flex: 1 0 30%;
+
+      @include desktop{
+        flex: 1 0 10%;
+      }
+    }
+  }
 }
 .expanded__inner{
   display: flex;
