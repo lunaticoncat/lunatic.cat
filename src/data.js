@@ -14,8 +14,8 @@ import bandpPoster from './video/bandp.x264.mp4.png';
 import talkmapMov from './video/talkmap.x264.mp4';
 import talkmapPoster from './video/talkmap.x264.mp4.png';
 
-import razum2umPic from './images/razum2um.jpg?sizes[]=992,sizes[]=600';
-import byjikahkazPic from './images/byjikahkaz.jpg?sizes[]=992,sizes[]=600';
+import razum2umPic from './images/razum2um.jpg?sizes[]=440,sizes[]=220';
+import byjikahkazPic from './images/byjikahkaz.jpg?sizes[]=440,sizes[]=220';
 
 import techicons from './techicons';
 
@@ -82,14 +82,14 @@ const teamSection = {
   head: {
     title: 'Our team',
     subtitle: "We're small now, but this makes communication highly effecient.",
-    devicons: [razum2umPic, byjikahkazPic],
+    devicons: [{...razum2umPic, ratio: true}, {...byjikahkazPic, ratio: true}],
   },
   body: [
-    {img: razum2umPic,
-     title: "Vladimir Bokov", text: [sentence(1), sentence(1)] },
+    // {img: razum2umPic,
+    //  title: "Vladimir Bokov", text: [sentence(1), sentence(1)] },
 
-    {img: byjikahkazPic,
-     title: 'Vladimir Sidorenko', text: [sentence(1), sentence(1)] },
+    // {img: byjikahkazPic,
+    //  title: 'Vladimir Sidorenko', text: [sentence(1), sentence(1)] },
   ]
 };
 

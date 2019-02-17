@@ -24,3 +24,14 @@ compress "*.css"
 compress "*.svg"
 compress "*.ttf"
 
+# run on input before webpack
+# checkinstall jpeg-archive
+# checkinstall mozjpeg
+# find build -type f -iname ".jpg" -exec jpeg-recompress {} {} \;
+
+# checkinstall optipng
+# find build -type f -name '*.png' -exec optipng {} \;
+
+checkinstall cwebp
+find build -type f -name '*.jpg' -exec cwebp -q 70 {} -o {}.webp \;
+find build -type f -name '*.png' -exec cwebp -q 70 {} -o {}.webp \;
