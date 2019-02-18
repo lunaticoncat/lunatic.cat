@@ -60,7 +60,7 @@ const workSection = {
   head: {
     title: 'Our work',
     subtitle: "Sample use cases we've built using",
-    devicons: techicons,
+    icons: techicons,
   },
   body: [
     {video: {sources: [{src: veeqoMov, type: x264}], poster: veeqoPoster},
@@ -83,7 +83,9 @@ const teamSection = {
   head: {
     title: 'Our team',
     subtitle: "We're small now, but this makes communication highly effecient.",
-    devicons: [{...razum2umPic, ratio: true}, {...byjikahkazPic, ratio: true}],
+    icons: [
+      {...razum2umPic, ratio: true, link: 'https://github.com/razum2um/'},
+      {...byjikahkazPic, ratio: true, link: 'https://github.com/ByJIKaHkaz/'}],
   },
   body: [
     // {img: razum2umPic,

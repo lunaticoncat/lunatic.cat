@@ -1,12 +1,15 @@
 .expanded{
   padding: 54pt 0;
 
-  .devicons {
+  .icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    .devicon {
+    .icon {
+      img {
+        border-radius: #{2 * $radius};
+      }
       &-work {
         padding: 1.2em;
       };
