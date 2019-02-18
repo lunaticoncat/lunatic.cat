@@ -24,6 +24,7 @@ const sentence = (count) => lorem({count, units: 'sentences'});
 
 const title = 'c';
 const emailLink = 'mailto:hello@lunatic.cat';
+const emailButton = { link: emailLink, text: 'Meow to us', primary: true };
 
 const nav = {
   title,
@@ -94,10 +95,10 @@ const teamSection = {
 };
 
 const cta = {
-  title: word(1),
-  subtitle: sentence(2),
+  title: "Let's talk about your next idea",
+  subtitle: '', //sentence(2),
   links: [
-    { link: emailLink, text: word(1), primary: true },
+    emailButton,
   ]
 };
 
@@ -105,7 +106,7 @@ const landingHeader = {
   title: 'Lunatic.cat',
   subtitle: 'Finding the best tech solutions can help your business grow faster. Our key specializations are: OLAP backends, conflictless realtime client-server CRDT syncronization and DevOps using Kuburnetes.',
   links: [
-    { link: emailLink, text: 'Meow to us', primary: true },
+    emailButton,
     // { link: '#header2', text: word(1) },
   ]
 };
@@ -114,10 +115,11 @@ const footer = {
   title: 'c.c',
   // should be 3
   groups: [
-    [word(1), word(1)],
-    [word(1), word(1)],
-    [word(1), word(1),
-     word(1), word(1)],
+    [], //word(1), word(1)],
+    [], //word(1), word(1)],
+    [{ link: 'https://github.com/lunatic-cat/', text: 'GitHub' },
+     `Lunatic.cat, ${new Date().getFullYear().toString()}`
+    ],
   ]
 };
 

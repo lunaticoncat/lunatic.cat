@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Text from './../Text';
 
 export default ({ title, groups }) => {
   return <div className="footer footer--dark">
@@ -9,7 +10,7 @@ export default ({ title, groups }) => {
                   {groups.map((group, i) => {
                     return <div className="footer__data__item" key={i}>
                             {group.map((item, i) => {
-                              return <div className="footer__row" key={i}>{item}</div>;
+                              return <Text className="footer__row" key={i} text={item} />;
                             })}
                           </div>;
                   })}
