@@ -16,14 +16,6 @@ compress() {
   find build -type f -iname "$1" -exec brotli -9 -k -f {} \;
 }
 
-checkinstall zopfli
-checkinstall brotli
-
-compress "*.js"
-compress "*.css"
-compress "*.svg"
-compress "*.ttf"
-
 # run on input before webpack
 # checkinstall jpeg-archive
 # checkinstall mozjpeg
@@ -35,3 +27,13 @@ compress "*.ttf"
 checkinstall cwebp
 find build -type f -name '*.jpg' -exec cwebp -q 70 {} -o {}.webp \;
 find build -type f -name '*.png' -exec cwebp -q 70 {} -o {}.webp \;
+
+checkinstall zopfli
+checkinstall brotli
+
+compress "*.js"
+compress "*.css"
+compress "*.svg"
+compress "*.ttf"
+compress "*.webp"
+
