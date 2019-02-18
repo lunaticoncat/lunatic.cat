@@ -1,4 +1,4 @@
-import lorem from 'lorem-ipsum';
+// import lorem from 'lorem-ipsum';
 
 import reportImg from './images/report.svg';
 import syncImg from './images/sync.svg';
@@ -19,8 +19,8 @@ import byjikahkazPic from './images/byjikahkaz.jpg?sizes[]=440,sizes[]=220';
 
 import techicons from './techicons';
 
-const word = (count) => lorem({count, units: 'word'});
-const sentence = (count) => lorem({count, units: 'sentences'});
+// const word = (count) => lorem({count, units: 'word'});
+// const sentence = (count) => lorem({count, units: 'sentences'});
 
 const title = 'c';
 const emailLink = 'mailto:hello@lunatic.cat';
