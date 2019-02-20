@@ -45,7 +45,7 @@ const cta = {
 const landingHeader = {
   fullscreen: true,
   title: 'Lunatic.cat',
-  subtitle: 'Trobar les millors solucions tecnològiques pot ajudar el vostre negoci a créixer més ràpidament. Les nostres especialitzacions clau són: torneigs OLAP, CRDT sincronització de client-servidor en temps real i DevOps utilitzant Kuburnetes.',
+  subtitle: 'Les nostres especialitzacions clau són: torneigs OLAP, CRDT sincronització de client-servidor en temps real i DevOps utilitzant Kuburnetes.',
   links: [
     { link: 'mailto:hello@lunatic.cat', text: 'Meow cap a nosaltres', primary: true },
     // { link: '#header2', text: word(1) },
