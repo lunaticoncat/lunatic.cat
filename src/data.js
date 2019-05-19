@@ -65,7 +65,7 @@ const workSection = {
   },
   body: [
     {video: {sources: [{src: veeqoMov, type: x264}], poster: veeqoPoster},
-     title: "Reports for Veeqo.com", text: ["We processed hundreds of gigabytes of sales records in to give customers of the e-commerce platform quick access to their's aggregated data, follow the trends and plan accordingly.", "All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into the existing user interface.", "Technology used: PostgeSQL, Elasticsearch, RabbitMQ.", { link: 'https://www.veeqo.com/features/reporting', text: 'We stand behind this feature ;)'}] },
+     title: "Reporting for Veeqo.com", text: ["We processed hundreds of gigabytes of sales records in to give customers of the e-commerce platform quick access to their's aggregated data, follow the trends and plan accordingly.", "All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into the existing user interface.", "Technology used: PostgeSQL, Elasticsearch, RabbitMQ.", { link: 'https://www.veeqo.com/features/reporting', text: 'We stand behind this feature ;)'}] },
 
     {video: {vertical: true,
              poster: bandpPoster,
