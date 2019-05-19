@@ -14,11 +14,15 @@ import bandpPoster from './video/bandp.x264.mp4.png';
 import talkmapMov from './video/talkmap.x264.mp4';
 import talkmapPoster from './video/talkmap.x264.mp4.png';
 import kanaatPoster from './images/kanaat.jpg';
+import iproutePoster from './images/iproute.jpg';
 
 import razum2umPic from './images/razum2um.jpg?sizes[]=440,sizes[]=220';
 import byjikahkazPic from './images/byjikahkaz.jpg?sizes[]=440,sizes[]=220';
 
 import techicons from './techicons';
+
+import githubSvg from 'devicon/icons/github/github-original.svg';
+import twitterSvg from 'devicon/icons/twitter/twitter-original.svg';
 
 // const word = (count) => lorem({count, units: 'word'});
 // const sentence = (count) => lorem({count, units: 'sentences'});
@@ -76,9 +80,17 @@ const workSection = {
      title: 'Frontend for TalkMap.io', text: ['Rich user interface for a service which analyses your social health. Visualisation of the social graph and close relationships.', 'Technology used: clojurescript, re-frame, d3js.', { link: 'https://talkmap.io/', text: 'Take a look here!' }] },
     {img: {src: kanaatPoster, vertical: true},
      title: 'Ethereum mobile client',
-     text: ['A full mobile client able to generate crypto private keys and sign Ethereum transactions, used to make voting process transparent',
-            'Technology used: React Native, Redux, Ethereum',
+     text: ['A full mobile client able to generate crypto private keys and sign Ethereum transactions, used to make voting process transparent.',
+            'Technology used: React Native, Native Android/iOS modules, Ethereum',
            'Not launched yet. Stay tuned!']
+    },
+    {img: {src: iproutePoster, vertical: true},
+     title: 'DevOps tools',
+     text: ['Together with Meissa GmbH we develop tools, which bring developer happiness.',
+            'Technology used: Clojure',
+            { link: 'https://asciinema.org/a/222934', text: 'See sample usecase in action' },
+            'Learn about Domain Driven Architecture',
+            { link: 'https://domaindrivenarchitecture.org/', text: 'Some blog posts'}]
     }
   ]
 };
@@ -89,17 +101,32 @@ const teamSection = {
   // type: 'Enumeration',
   head: {
     title: 'Our team',
-    subtitle: "We're small now, but this makes communication highly effecient.",
-    icons: [
-      {...razum2umPic, ratio: true, link: 'https://github.com/razum2um/'},
-      {...byjikahkazPic, ratio: true, link: 'https://github.com/ByJIKaHkaz/'}],
+    subtitle: ["We're small now, but this makes communication highly effecient.", "We ❤️ OpenSource and do pay forward", { link: 'https://opensource.lunatic.cat/lunatic-cat', text: "Look what we've done so far!"}, "Link above is a service, you can collect info about any GitHub team there"],
+    // icons: [
+    //   {...razum2umPic, ratio: true, link: 'https://github.com/razum2um/'},
+    //   {...byjikahkazPic, ratio: true, link: 'https://github.com/ByJIKaHkaz/'}],
   },
   body: [
-    // {img: razum2umPic,
-    //  title: "Vladimir Bokov", text: [sentence(1), sentence(1)] },
+    {img: razum2umPic,
+     icons: [{icon: githubSvg, link: 'https://github.com/razum2um/'}, {icon: twitterSvg, link: 'https://twitter.com/razum2um'}],
+     title: "Vladimir Bokov", text: [
+       'Loves talking about technology code :) In public:',
+       { link: 'https://hardcode.fm', text: 'Hardcode Podcast (in russian)' },
+       'In universities (mini course with 3 lectures and a talk)',
+       { link: 'https://www.facebook.com/photo.php?fbid=1643301225718033&set=a.1643302689051220&type=3&theater', text: 'About blockchain' },
+       { link: 'https://vk.com/photo-124135141_433256396', text: 'About React Native'},
+       'More links to contributions and public activity',
+       { link: 'https://razum2um.me/', text: 'On the personal site' }
+     ] },
 
-    // {img: byjikahkazPic,
-    //  title: 'Vladimir Sidorenko', text: [sentence(1), sentence(1)] },
+    {img: byjikahkazPic,
+     icons: [{icon: githubSvg, link: 'https://github.com/ByJIKaHkaz'}, {icon: twitterSvg, link: 'https://twitter.com/ByJIKaH_ru'}],
+     title: 'Vladimir Sidorenko', text: [
+       'Takes part in hackathons',
+       { link: 'https://vk.com/photo-124135141_456239954', text: 'Yep, our cover is real ;)'},
+       'A novel translator',
+       { link: 'https://tl.rulate.ru/users/2814', text: 'A book (!) translation'},
+     ] },
   ]
 };
 

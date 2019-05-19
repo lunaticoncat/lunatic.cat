@@ -20,7 +20,7 @@ export default ({ nav, header, enumeration, sections, sectionHead, cta, footer }
                case 'LandingSection':
                  return(<React.Fragment key={sidx}>
                      <LandingSectionHead {...{...section.head, id: section.id}} />
-                     {section.body.map((body, i) => <LandingSection {...{...body, key: i}} />)}
+                        {section.body.map((body, i) => <LandingSection {...{...body, key: i, className: section.id}} />)}
                  </React.Fragment>);
                default: return null;
                }

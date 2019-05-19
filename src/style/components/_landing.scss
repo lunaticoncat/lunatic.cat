@@ -9,6 +9,32 @@
   h2 {
     margin-top: 0.5em;
   }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.landing__section__team {
+  .expanded__image {
+    border-radius: 8px;
+    padding: 0;
+  }
+  .expanded__text {
+    padding-right: 10px;
+  }
+  .expanded__title__wrapper {
+    display: flex;
+    align-items: baseline;
+
+    .miniicon {
+      max-height: 40px;
+      max-width: 40px;
+      padding: 10px 0;
+      display: flex;
+      flex: 1;
+    }
+  }
 }
 
 .landing__section:nth-child(odd){

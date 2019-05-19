@@ -2,9 +2,9 @@ import * as React from 'react';
 import Text from './../Text';
 import Image from './../Image';
 
-export default ({ img, video, title, text }) => {
+export default ({ img, video, title, text, className, icons = [] }) => {
   return <>
-           <div className="expanded landing__section">
+          <div className={`expanded landing__section ${className ? 'landing__section__' + className : ''}`}>
              <div className="container">
                <div className="expanded__inner">
                  <div className="expanded__media">
@@ -15,7 +15,14 @@ export default ({ img, video, title, text }) => {
                    </video>): null }
                  </div>
                  <div className="expanded__content">
-                    <h2 className="expanded__title">{title}</h2>
+                   <div className="expanded__title__wrapper">
+                      <h2 className="expanded__title">{title}</h2>
+                     {icons.map((icon, idx) =>
+                      <a className='miniicon' href={icon.link} target="_blank" rel="nofollow noopener noreferrer">
+                        <Image src={icon.icon} />
+                      </a>
+                     )}
+                   </div>
                     <Text className="expanded__text" text={text} />
                  </div>
                </div>
