@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 const Text = ({ text, className }) => {
-  console.log('text', text);
   if ((typeof text === 'object') && ('link' in text) && ('text' in text)) {
     if (text.link.match(/^\//)) {
       return <Link className={className} to={text.link}>{text.text}</Link>;
