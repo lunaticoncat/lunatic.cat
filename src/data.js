@@ -140,7 +140,7 @@ const cta = {
 
 const landingHeader = {
   title: 'Lunatic.cat',
-  subtitle: 'We can help your business grow faster. Our key specializations are: OLAP backends, conflictless realtime client-server CRDT syncronization and DevOps using Kuburnetes.',
+  subtitle: 'We can help your business grow faster. Our key specializations are: OLAP backends, conflictless realtime client-server CRDT syncronization, cross-platform mobile development and DevOps using Kuburnetes.',
   links: [
     emailButton,
     // { link: '#header2', text: word(1) },
