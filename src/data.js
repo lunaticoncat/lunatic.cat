@@ -110,7 +110,7 @@ const teamSection = {
     {img: razum2umPic,
      icons: [{icon: githubSvg, link: 'https://github.com/razum2um/'}, {icon: twitterSvg, link: 'https://twitter.com/razum2um'}],
      title: "Vladimir Bokov", text: [
-       'Loves talking about technology code :) In public:',
+       'Loves talking about technology and code :) In public:',
        { link: 'https://hardcode.fm', text: 'Hardcode Podcast (in russian)' },
        'In universities (mini course with 3 lectures and a talk)',
        { link: 'https://www.facebook.com/photo.php?fbid=1643301225718033&set=a.1643302689051220&type=3&theater', text: 'About blockchain' },
@@ -123,7 +123,7 @@ const teamSection = {
      icons: [{icon: githubSvg, link: 'https://github.com/ByJIKaHkaz'}, {icon: twitterSvg, link: 'https://twitter.com/ByJIKaH_ru'}],
      title: 'Vladimir Sidorenko', text: [
        'Takes part in hackathons',
-       { link: 'https://vk.com/photo-124135141_456239954', text: 'Yep, our cover is real ;)'},
+       { link: 'https://vk.com/photo-124135141_456239954', text: 'Yep, our cover photo is real ;)'},
        'A novel translator',
        { link: 'https://tl.rulate.ru/users/2814', text: 'A book (!) translation'},
      ] },
