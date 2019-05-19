@@ -26,6 +26,10 @@
       }
     }
   }
+
+  a.expanded__text{
+    text-decoration: underline;
+  }
 }
 .expanded__inner{
   display: flex;

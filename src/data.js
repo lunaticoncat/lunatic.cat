@@ -13,6 +13,7 @@ import bandpMov from './video/bandp.x264.mp4';
 import bandpPoster from './video/bandp.x264.mp4.png';
 import talkmapMov from './video/talkmap.x264.mp4';
 import talkmapPoster from './video/talkmap.x264.mp4.png';
+import kanaatPoster from './images/kanaat.jpg';
 
 import razum2umPic from './images/razum2um.jpg?sizes[]=440,sizes[]=220';
 import byjikahkazPic from './images/byjikahkaz.jpg?sizes[]=440,sizes[]=220';
@@ -64,15 +65,21 @@ const workSection = {
   },
   body: [
     {video: {sources: [{src: veeqoMov, type: x264}], poster: veeqoPoster},
-     title: "Reports for Veeqo.com", text: ["We processed hundreds of gigabytes of sales records in to give customers of the e-commerce platform quick access to their's aggregated data, follow the trends and plan accordingly.", "All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into the existing user interface.", "Technology used: PostgeSQL, Elasticsearch."] },
+     title: "Reports for Veeqo.com", text: ["We processed hundreds of gigabytes of sales records in to give customers of the e-commerce platform quick access to their's aggregated data, follow the trends and plan accordingly.", "All of this was done in a modular way, decoupled from the core functionality and seamlessly integrated right into the existing user interface.", "Technology used: PostgeSQL, Elasticsearch, RabbitMQ.", { link: 'https://www.veeqo.com/features/reporting', text: 'We stand behind this feature ;)'}] },
 
     {video: {vertical: true,
              poster: bandpPoster,
              sources: [{src: bandpMov, type: x264}]},
-     title: 'Brick & Portal iOS app', text: ['Together with digitaldesign.nyc we created a mobile application for a social commerce platform.', 'Features included: contacts, camera access, social networks auth.', 'Technology used: React Native, Redux.'] },
+     title: 'Brick & Portal iOS app', text: ['Together with digitaldesign.nyc we created a mobile application for a social commerce platform.', 'Features included: contacts, camera access, social networks auth.', 'Technology used: React Native, Redux.', { link: 'https://itunes.apple.com/us/app/brick-portal/id1191500921', text: 'Able to be cross-platform, but now available only in AppStore only'}] },
 
     {video: {sources: [{src: talkmapMov, type: x264}], poster: talkmapPoster},
-     title: 'Frontend for TalkMap.io', text: ['Rich user interface for a service which analyses your social health. Visualisation of the social graph and close relationships.', 'Technology used: clojurescript, re-frame, d3js.'] },
+     title: 'Frontend for TalkMap.io', text: ['Rich user interface for a service which analyses your social health. Visualisation of the social graph and close relationships.', 'Technology used: clojurescript, re-frame, d3js.', { link: 'https://talkmap.io/', text: 'Take a look here!' }] },
+    {img: {src: kanaatPoster, vertical: true},
+     title: 'Ethereum mobile client',
+     text: ['A full mobile client able to generate crypto private keys and sign Ethereum transactions, used to make voting process transparent',
+            'Technology used: React Native, Redux, Ethereum',
+           'Not launched yet. Stay tuned!']
+    }
   ]
 };
 
