@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "devicon": "git+https://git@github.com/lunatic-cat/devicon.git",
+    "devicon": "git+https://git@github.com/konpa/devicon.git",
     "lorem-ipsum": "^1.0.6",
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.0",

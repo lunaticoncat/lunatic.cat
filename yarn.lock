@@ -3440,9 +3440,9 @@ detect-port-alt@1.1.6:
     address "^1.0.1"
     debug "^2.6.0"
 
-"devicon@git+https://git@github.com/lunatic-cat/devicon.git":
+"devicon@git+https://git@github.com/konpa/devicon.git":
   version "2.2.0"
-  resolved "git+https://git@github.com/lunatic-cat/devicon.git#294f551bc0891d91a355f819bd19335ac676604c"
+  resolved "git+https://git@github.com/konpa/devicon.git#6d314b39abbb61795ac06fa709324f2df28dc0e5"
 
 diff@^3.2.0:
   version "3.5.0"
