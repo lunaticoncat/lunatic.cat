@@ -5214,10 +5214,10 @@ https-proxy-agent@^2.2.1:
     agent-base "^4.1.0"
     debug "^3.1.0"
 
-icon-gen@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/icon-gen/-/icon-gen-1.2.3.tgz#698e76c3019a4d299b71c4d245a09ff99712fab1"
-  integrity sha512-gbyTZuvIRQr1zmjRPaNRIm7FqCdXnRjoQSdXcZmeGeu+scuTx3a6IMWH5MVrswk2gXNxTsR2UnzCT7TrR3GVeA==
+icon-gen@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/icon-gen/-/icon-gen-2.0.0.tgz#2ba21902305ebafc3e500e505c5d3076dc4fb91a"
+  integrity sha512-Asj0rWMoFDY3AHLsZdx8UgHX7AIh/9u5ZTXYWJYH+2n8HqHQr655ATdoa1yQLidmm2fnTYlob+Rm4zzrjWr5Bw==
   dependencies:
     del "^3.0.0"
     mkdirp "^0.5.1"

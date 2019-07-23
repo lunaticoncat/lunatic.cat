@@ -31,7 +31,7 @@
   ],
   "devDependencies": {
     "glyphhanger": "^3.0.3",
-    "icon-gen": "^1.2.3",
+    "icon-gen": "^2.0.0",
     "react-snap": "^1.19.0",
     "svg2png": "^4.1.1"
   }
