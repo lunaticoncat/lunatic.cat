@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "devicon": "git+https://git@github.com/konpa/devicon.git",
-    "lorem-ipsum": "^1.0.6",
+    "lorem-ipsum": "^2.0.3",
     "node-sass": "^4.13.0",
     "normalize.css": "^8.0.0",
     "react": "^16.11.0",
