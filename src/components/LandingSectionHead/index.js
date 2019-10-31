@@ -7,8 +7,8 @@ export default ({ id, title, subtitle, icons = [] }) => {
            <div className="expanded landing__section landing__section__head">
              <div className="container">
                <h2>{title}</h2>
-               <Text text={subtitle} />
-               <div className='icons'>
+              {subtitle ? <Text text={subtitle} /> : null}
+               <div className={`icons icons-${id}`}>
                  {icons.map((icon, idx) =>
                    <div className={`icon icon-${id}`} key={idx}>
                      <Image src={icon} />
