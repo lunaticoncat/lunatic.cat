@@ -1,8 +1,19 @@
 /*eslint no-unused-vars: "off"*/
-import lorem from 'lorem-ipsum';
+import { LoremIpsum } from "lorem-ipsum";
 
-const word = (count) => lorem({count, units: 'word'});
-const sentence = (count) => lorem({count, units: 'sentences'});
+const lorem = new LoremIpsum({
+  sentencesPerParagraph: {
+    max: 8,
+    min: 4
+  },
+  wordsPerSentence: {
+    max: 16,
+    min: 4
+  }
+});
+
+const word = (count) => lorem.generateWords(count);
+const sentence = (count) => lorem.generateSentences(count);
 
 const title = 'c';
 
