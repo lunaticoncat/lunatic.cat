@@ -18,7 +18,7 @@ export default ({ img, video, title, text, className, icons = [] }) => {
                    <div className="expanded__title__wrapper">
                       <h2 className="expanded__title">{title}</h2>
                      {icons.map((icon, idx) =>
-                      <a className='miniicon' href={icon.link} target="_blank" rel="nofollow noopener noreferrer">
+                      <a key={idx} className='miniicon' href={icon.link} target="_blank" rel="nofollow noopener noreferrer">
                         <Image src={icon.icon} />
                       </a>
                      )}
