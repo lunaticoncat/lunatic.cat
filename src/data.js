@@ -20,6 +20,7 @@ import razum2umPic from './images/razum2um.jpg?sizes[]=440,sizes[]=220';
 import byjikahkazPic from './images/byjikahkaz.jpg?sizes[]=440,sizes[]=220';
 
 import techicons from './techicons';
+import clienticons from './clienticons';
 
 import githubSvg from 'devicon/icons/github/github-original.svg';
 import twitterSvg from 'devicon/icons/twitter/twitter-original.svg';
@@ -63,8 +64,8 @@ const workSection = {
   id: 'work',
   type: 'LandingSection',
   head: {
-    title: 'Our work',
-    subtitle: "Sample use cases we've built using",
+    title: 'Our stack',
+    subtitle: "Some use cases we've built using",
     icons: techicons,
   },
   body: [
@@ -94,6 +95,17 @@ const workSection = {
     }
   ]
 };
+
+const clientsSection = {
+  id: 'clients',
+  type: 'LandingSection',
+  head: {
+    title: 'Our clients',
+    subtitle: 'Long-term partnership',
+    icons: clienticons,
+  },
+  body: []
+}
 
 const teamSection = {
   id: 'team',
@@ -160,7 +172,7 @@ const footer = {
 };
 
 const landing = {
-  sections: [experienceSection, workSection, teamSection],
+  sections: [experienceSection, clientsSection, workSection, teamSection],
   cta,
 };
 

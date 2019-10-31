@@ -5,11 +5,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
+
+    &-clients {
+      justify-content: center;
+    }
 
     .icon {
       img {
         border-radius: #{2 * $radius};
       }
+      &-clients {
+        margin: 1.2em;
+        max-height: 150px;
+        max-width: 150px;
+
+        img {
+          border-radius: 0;
+        }
+      };
       &-work {
         padding: 1.2em;
       };
