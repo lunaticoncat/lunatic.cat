@@ -8,7 +8,7 @@
     "node-sass": "^4.13.0",
     "normalize.css": "^8.0.0",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "file:create-react-app/packages/react-scripts"
   },
