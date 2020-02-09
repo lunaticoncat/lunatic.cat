@@ -11,7 +11,7 @@ export default ({ id, title, subtitle, icons = [] }) => {
                <div className={`icons icons-${id}`}>
                  {icons.map((icon, idx) =>
                    <div className={`icon icon-${id}`} key={idx}>
-                     <Image src={icon} />
+                     <Image src={icon} lazy={true} />
                    </div>
                   )}
                </div>
