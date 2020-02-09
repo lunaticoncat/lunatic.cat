@@ -44,7 +44,7 @@ button, .button{
 .button__accent{
   background-color: $accent;
   border-color: $accent;
-  color: #fff;
+  color: $text-dark;
 
   @include desktop{
     &:hover{
