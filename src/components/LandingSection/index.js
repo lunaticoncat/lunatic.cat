@@ -9,7 +9,7 @@ export default ({ img, video, title, text, className, icons = [] }) => {
                <div className="expanded__inner">
                  <div className="expanded__media">
                    {(typeof img === 'object') ? <Image src={img.src} className={`expanded__image ${img.vertical ? 'expanded__image--vertical' : '' }`} /> : null }
-                   {(typeof img === 'string') ? <Image src={img.src} className={`expanded__image ${img.vertical ? 'expanded__image--vertical' : '' }`} /> : null }
+                   {(typeof img === 'string') ? <Image src={img} className={`expanded__image`} /> : null }
                    {video ? (<video autoPlay loop defaultmuted="true" muted="muted" playsInline onContextMenu={() => {}} preload="auto" className={`expanded__video ${video.vertical ? 'expanded__video--vertical' : ''}`} poster={video.poster}>
                      {video.sources.map((source, idx) => <source src={source.src} type={source.type} key={idx} />)}
                    </video>): null }
