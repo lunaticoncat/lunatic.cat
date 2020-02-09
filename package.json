@@ -3,22 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cwebp-bin": "^5.1.0",
     "devicon": "git+https://git@github.com/konpa/devicon.git",
+    "glyphhanger": "^3.0.3",
+    "icon-gen": "^2.0.0",
     "lorem-ipsum": "^2.0.3",
     "node-sass": "^4.13.0",
     "normalize.css": "^8.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-snap": "^1.19.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "file:create-react-app/packages/react-scripts"
+    "react-scripts": "file:create-react-app/packages/react-scripts",
+    "svg2png": "^4.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap",
-    "deploy": "yarn build && ./bin/compress.sh && ./bin/deploy.sh"
+    "deploy": "yarn build && ./node_modules/.bin/react-snap && ./bin/compress.sh && ./bin/deploy.sh"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,10 +33,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "glyphhanger": "^3.0.3",
-    "icon-gen": "^2.0.0",
-    "react-snap": "^1.19.0",
-    "svg2png": "^4.1.1"
+  "reactSnap": {
+    "puppeteerExecutablePath": "/usr/bin/google-chrome-unstable",
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"]
   }
 }

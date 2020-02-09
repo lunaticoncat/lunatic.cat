@@ -1,0 +1,7 @@
+/node_modules
+/create-react-app
+.git
+Dockerfile
+.dockerignore
+/dist
+/.gitignore
