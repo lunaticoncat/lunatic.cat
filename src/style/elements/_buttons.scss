@@ -45,12 +45,14 @@ button, .button{
   background-color: $accent;
   border-color: $accent;
   color: $text-dark;
+  font-size: 1.4em;
+  padding: 3pt 30pt;
 
   @include desktop{
     &:hover{
       background-color: darken($accent,4%);
       border-color: darken($accent,4%);
-      color: #fff;
+      color: $text-dark;
     }
   }
 }
