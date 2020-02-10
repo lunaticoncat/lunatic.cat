@@ -12,11 +12,11 @@ export default ({ title, subtitle, links, catify, fullscreen }) => {
            <div className="hero__mask"></div>
            <div className="hero__inner">
              <div className="container">
-               <div className="hero__content" style={fullscreen ? {'min-height': '100vh'} : {}}>
+               <div className={`hero__content ${fullscreen ? 'hero__content__fullscreen' : ''}`}>
                  <div className="hero__content__inner" id='navConverter'>
                    <h1 className={`hero__title ${catify ? 'cat-font': ''}`}>{title}</h1>
                    <p className="hero__text">{subtitle}</p>
-  { links.map(e => <a href={e.link} key={e.link} className={`button ${e.primary ? 'button__accent' : 'hero__button'}`}>{e.text}</a>) }
+                   { links.map(e => <a href={e.link} key={e.link} className={`button ${e.primary ? 'button__accent' : 'hero__button'}`}>{e.text}</a>) }
                  </div>
                </div>
              </div>
