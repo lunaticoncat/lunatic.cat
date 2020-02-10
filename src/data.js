@@ -120,7 +120,7 @@ const teamSection = {
   },
   body: [
     {img: razum2umPic,
-     icons: [{icon: githubSvg, link: 'https://github.com/razum2um/'}, {icon: twitterSvg, link: 'https://twitter.com/razum2um'}],
+     icons: [{src: githubSvg, link: 'https://github.com/razum2um/', alt: "vlad bokov's github"}, {src: twitterSvg, link: 'https://twitter.com/razum2um', alt: "vlad bokov's twitter"}],
      title: "Vladimir Bokov", text: [
        'Loves talking about technology and code :) In public:',
        { link: 'https://hardcode.fm', text: 'Hardcode Podcast (in russian)' },
@@ -132,7 +132,7 @@ const teamSection = {
      ] },
 
     {img: byjikahkazPic,
-     icons: [{icon: githubSvg, link: 'https://github.com/ByJIKaHkaz'}, {icon: twitterSvg, link: 'https://twitter.com/ByJIKaH_ru'}],
+     icons: [{src: githubSvg, link: 'https://github.com/ByJIKaHkaz', alt: "vlad sidorenko's github"}, {src: twitterSvg, link: 'https://twitter.com/ByJIKaH_ru', alt: "vlad sidorenko's twitter"}],
      title: 'Vladimir Sidorenko', text: [
        'Takes part in hackathons',
        { link: 'https://vk.com/photo-124135141_456239954', text: 'Yep, our cover photo is real ;)'},

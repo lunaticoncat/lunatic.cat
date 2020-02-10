@@ -29,10 +29,8 @@
 
     .miniicon {
       max-height: 40px;
-      max-width: 40px;
-      padding: 10px 0;
-      display: flex;
-      flex: 1;
+      max-width: 30px;
+      padding-top: 1.414em; // same as h2
     }
   }
 }
