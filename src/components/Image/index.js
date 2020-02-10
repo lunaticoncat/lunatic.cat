@@ -12,7 +12,6 @@ const responsiveImg = ({ src, className = '', alt = '', lazy = false}) => {
 }
 
 export default ({ src, className = '', alt = '', lazy = false}) => {
-  console.log({src, alt})
   // herrstucki/responsive-loader
   if ((typeof src === 'object') && ('src' in src) && (('srcSet' in src) || (src.src.match(/^data:/)))) {
     if (src.link) {
