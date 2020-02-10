@@ -39,8 +39,8 @@ RUN ./node_modules/.bin/react-snap
 
 # compress
 RUN find build -regextype posix-egrep -regex '.*(\.jpg|\.png)' -exec ./node_modules/cwebp-bin/vendor/cwebp -quiet -q 70 {} -o {}.webp \;
-RUN find build -regextype posix-egrep -regex '.*(\.js|\.css|\.svg|\.ttf|\.webp|\.jpg|\.png|\.html)' -exec zopfli -i1000 {} \;
-RUN find build -regextype posix-egrep -regex '.*(\.js|\.css|\.svg|\.ttf|\.webp|\.jpg|\.png|\.html)' -exec brotli --input {} --output {}.br \;
+RUN find build -regextype posix-egrep -regex '.*(\.js|\.css|\.svg|\.ttf|\.woff2|\.webp|\.jpg|\.png|\.html|\.mp4)' -exec zopfli -i1000 {} \;
+RUN find build -regextype posix-egrep -regex '.*(\.js|\.css|\.svg|\.ttf|\.woff2|\.webp|\.jpg|\.png|\.html|\.mp4)' -exec brotli --quality 10 --input {} --output {}.br \;
 RUN find build -regextype posix-egrep -regex '.*(\.br|\.webp)' -exec chown pptruser:pptruser {} \;
 
 FROM fholzer/nginx-brotli:v1.16.0
