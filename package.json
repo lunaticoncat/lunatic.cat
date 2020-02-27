@@ -10,7 +10,7 @@
     "lorem-ipsum": "^2.0.3",
     "node-sass": "^4.13.0",
     "normalize.css": "^8.0.0",
-    "react": "^16.11.0",
+    "react": "^16.13.0",
     "react-dom": "^16.11.0",
     "react-snap": "^1.19.0",
     "react-router-dom": "^5.1.2",
