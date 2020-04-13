@@ -12,7 +12,7 @@ export default ({ head, body, id }) => {
                {body.map((item, i) => {
                  return <div className="step" key={i}>
                    <div className="step__media">
-                     {item.img}
+                     <Image src={item.img} className="step__image" lazy={true} />
                    </div>
                    <h4>{item.title}</h4>
                    <p className="step__text">{item.text}</p>

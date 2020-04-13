@@ -37,6 +37,17 @@
   }
 }
 
+.step__image{
+  max-height: 100px;
+  max-width: 222px;
+  margin-top: 8pt;
+  @include noDragging;
+
+  @include tablet{
+    max-width:none;
+  }
+}
+
 .step__text{
   max-width: 36ch;
   text-align: center;
