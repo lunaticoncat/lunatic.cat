@@ -1,9 +1,5 @@
 // import lorem from 'lorem-ipsum';
 
-import React from 'react';
-
-import Undraw from 'react-undraw';
-
 import veeqoMov from './video/veeqo.x264.mp4';
 import veeqoPoster from './video/veeqo.x264.mp4.png';
 import bandpMov from './video/bandp.x264.mp4';
@@ -45,12 +41,12 @@ const experienceSection = {
     subtitle: 'Our expertise ensures that you have the right set of tools for your business which saves you both time and money',
   },
   body: [
-    { img: <Undraw name="report" height="100"/>, title: 'OLAP', text: 'Process hundreds of gigabytes to get new insights into your data.' },
-    { img: <Undraw name="real-time-sync" height="100"/>, title: 'Realtime Syncronization', text: 'Conflict-free distributed data replication.' },
-    { img: <Undraw name="react" height="100"/>, title: 'Frontend', text: 'Reactive, animated dashboards and visualizations.' },
-    { img: <Undraw name="mobile-apps" height="100"/>, title: 'Mobile', text: 'Cross platform development with React Native.' },
-    { img: <Undraw name="ether" height="100"/>, title: 'Ethereum', text: 'Deploy your own custom networks and server infractructure security audit.' },
-    { img: <Undraw name="container-ship" height="100"/>, title: 'DevOps', text: 'Migrate your system to using of Docker & Kubernetes.' },
+    { img: { imageType: "react-undraw", name: "real-time-sync", height: "100" }, title: 'OLAP', text: 'Process hundreds of gigabytes to get new insights into your data.' },
+    { img: { imageType: "react-undraw", name: "report", height: "100" }, title: 'Realtime Syncronization', text: 'Conflict-free distributed data replication.' },
+    { img: { imageType: "react-undraw", name: "react", height: "100" }, title: 'Frontend', text: 'Reactive, animated dashboards and visualizations.' },
+    { img: { imageType: "react-undraw", name: "mobile-apps", height: "100" }, title: 'Mobile', text: 'Cross platform development with React Native.' },
+    { img: { imageType: "react-undraw", name: "ether", height: "100" }, title: 'Ethereum', text: 'Deploy your own custom networks and server infractructure security audit.' },
+    { img: { imageType: "react-undraw", name: "container-ship", height: "100" }, title: 'DevOps', text: 'Migrate your system to using of Docker & Kubernetes.' },
   ]
 };
 
