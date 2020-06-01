@@ -3355,10 +3355,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-cwebp-bin@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/cwebp-bin/-/cwebp-bin-5.1.0.tgz#d5bea87c127358558e7bf7a90a6d440d42dcb074"
-  integrity sha512-BsPKStaNr98zfxwejWWLIGELbPERULJoD2v5ijvpeutSAGsegX7gmABgnkRK7MUucCPROXXfaPqkLAwI509JzA==
+cwebp-bin@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/cwebp-bin/-/cwebp-bin-6.1.1.tgz#bbf8bdb9c37403c711682d05b12de8dc9e810e13"
+  integrity sha512-NhtrQzmEuvUDS9gyWVTuBvBvp/rz0QCZpqmf8jYb/x2h29vBcaSaT2uer3lQBfP5nh2gVekgUT5UqRusXgvuaw==
   dependencies:
     bin-build "^3.0.0"
     bin-wrapper "^4.0.1"

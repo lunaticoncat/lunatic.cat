@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "cwebp-bin": "^5.1.0",
+    "cwebp-bin": "^6.1.1",
     "devicon": "git+https://git@github.com/konpa/devicon.git",
     "glyphhanger": "^3.0.3",
     "icon-gen": "^2.0.0",
