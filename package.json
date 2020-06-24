@@ -15,7 +15,7 @@
     "react-snap": "^1.19.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "file:create-react-app/packages/react-scripts",
-    "react-undraw": "^1.14.0",
+    "react-undraw": "^2.0.1",
     "svg2png": "^4.1.1"
   },
   "scripts": {
