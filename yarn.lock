@@ -3619,7 +3619,8 @@ detect-port-alt@1.1.6:
 
 "devicon@git+https://git@github.com/konpa/devicon.git":
   version "2.2.0"
-  resolved "git+https://git@github.com/konpa/devicon.git#6d314b39abbb61795ac06fa709324f2df28dc0e5"
+  uid "40cd6bc89a299dc50ac289f8e3b071d0dff49d9c"
+  resolved "git+https://git@github.com/konpa/devicon.git#40cd6bc89a299dc50ac289f8e3b071d0dff49d9c"
 
 diff-sequences@^24.9.0:
   version "24.9.0"
