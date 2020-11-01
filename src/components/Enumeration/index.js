@@ -14,7 +14,7 @@ export default ({ head, body, id }) => {
                    <div className="step__media">
                      <Image src={item.img} className="step__image" lazy={true} />
                    </div>
-                   <h4>{item.title}</h4>
+                   <h3>{item.title}</h3>
                    <p className="step__text">{item.text}</p>
                 </div>;
                })}
